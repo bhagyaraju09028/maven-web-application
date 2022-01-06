@@ -54,23 +54,5 @@ stages{
 }
 }
 }
-post{
-
-success{
-mail bcc: 'bhagyaraju09028@gmail.com', body: '''Build Success!!
-
-
-Regards,
-Venkat
-9440211385''', cc: 'bhagyaraju09028@gmail.com', from: '', replyTo: '', subject: 'Build Success!!', to: 'bhagyaraju09028@gmail.com'
 }
-failure{
-mail bcc: 'bhagyaraju09028@gmail.com', body: '''Build Failure!!
 
-
-Regards,
-Venkat
-9440211385''', cc: 'bhagyaraju09028@gmail.com', from: '', replyTo: '', subject: 'Build Success!!', to: 'bhagyaraju09028@gmail.com'
-}
-}
-}
