@@ -14,7 +14,7 @@ timestamps()
 }
 triggers{
 //Poll SCM
-pollSCM('* * * * *')
+//pollSCM('* * * * *')
 //Build Periodcally
 //cron('* * * * *')
 //GitHub hook
