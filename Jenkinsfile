@@ -34,11 +34,6 @@ stages{
     }
     }
 	
-    //stage ('ExecuteSonarQubereport'){
-    //steps{
-	//sh "mvn clean sonar:sonar"
-    }
-    }
 	
     stage('UploadArtifactintoNexusrepo'){
     steps{
