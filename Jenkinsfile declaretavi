@@ -12,7 +12,7 @@ options{
 timestamps()
 }
 
-triggers{
+//triggers{
 //pollSCM('* * * * *')
 //cron('* * * * *')
 
