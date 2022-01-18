@@ -1,0 +1,49 @@
+pipeline{
+
+agent any
+
+tools{
+maven "maven3.8.2"
+}
+
+options{
+//buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
+
+timestamps()
+}
+
+triggers{
+pollSCM('* * * * *')
+//cron('* * * * *')
+
+}
+
+stages{
+
+     stage('Checkoutcode'){
+	 steps{
+	   git branch: 'development', credentialsId: 'efe34820-6b17-4ca5-88e9-490aace3e135', url: 'https://github.com/bhagyaraju09028/maven-web-application.git'}
+     }
+	
+	 stage('Build'){
+	 steps{
+	 sh "mvn clean package"
+	}
+	}
+	
+	 stage('UploadArtifactsintoNexusRepo'){
+	 steps{
+	 sh "mvn clean deploy"
+	 }
+	 }
+	 
+	 stage('DeployAppintoTomcat')
+	 {
+	 steps{
+	 sshagent(['8fa726ae-8193-4c3d-95fd-81e364af2c78']){
+	  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.88.237.132:/opt/apache-tomcat-9.0.56/webapps"}
+     }  
+	}
+	}
+
+}
