@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Test-realese repository</name>
-	      <url>http://http://3.94.62.65:8081/repository/Test-release/</url>
+	      <url>http://18.212.166.127:8081/repository/Test-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Test-snapshot repository</name>
-	      <url>http://http://3.94.62.65:8081/repository/Test-snapshot/</url>
+	      <url>http://18.212.166.127:8081/repository/Test-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
