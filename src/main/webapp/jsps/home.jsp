@@ -36,7 +36,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	<span style="font-weight: bold;">
 		Venkata Bhagyarju
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href=""></a>
 	</span>
 </div>
 <hr>
@@ -44,7 +44,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <hr>
 <p align=center>The Pursuit of Happiness</p>
-<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/"></a> </small></p>
 
 </body>
 </html>
