@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">This international bestseller tells the incredible and heartbreaking love story of Sara and Jack as they learn to understand their differences in postwar New York.</h1>
+<h1 align="center">This international bestseller tells the incredible and heartbreaking love story of and Jack as they learn to understand their differences in postwar New York.</h1>
 <h1 align="center">The war is over, and Eric Smythe’s party was in full swing. All his clever Greenwich Village friends were there. So too was his sister Sara, an independent, outspoken young woman, starting to make her way in the big city.And then in walked Jack Malone, a U.S. Army journalist just back from a defeated Germany, a man whose world view was vastly different than that of Eric and his friends. </h1>
 <hr>
 <br>
